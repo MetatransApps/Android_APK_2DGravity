@@ -1,0 +1,12 @@
+rootProject.name = "MetatransApps_Android_APK_2DGravity_Ads_Home"
+
+include ':app'
+include ':MetatransApps_Android_LIB_Commons'
+include ':MetatransApps_Android_LIB_CommonsAds'
+include ':MetatransApps_Android_LIB_Commons2D'
+include ':MetatransApps_Android_LIB_2DGravity'
+
+project(':MetatransApps_Android_LIB_Commons').projectDir = new File('./../MetatransApps_Android_LIB_Commons/app')
+project(':MetatransApps_Android_LIB_CommonsAds').projectDir = new File('./../MetatransApps_Android_LIB_CommonsAds/app')
+project(':MetatransApps_Android_LIB_Commons2D').projectDir = new File('./../MetatransApps_Android_LIB_Commons2D/app')
+project(':MetatransApps_Android_LIB_2DGravity').projectDir = new File('./../MetatransApps_Android_LIB_2DGravity/app')

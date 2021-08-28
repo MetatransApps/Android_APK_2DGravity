@@ -34,8 +34,6 @@
         android:theme="@style/AppTheme"
         android:name="com.gravityplay.app.Application_Gravity_AdsHome">
 
-        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-5558070192233978~6121528055"/>
-
         <activity
             android:name="com.apps.mobile.android.commons.web.Activity_WebView_StatePreservingImpl_With_VideoPlayer"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"

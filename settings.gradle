@@ -1,12 +1,12 @@
-rootProject.name = "MetatransApps_Android_APK_2DGravity"
+rootProject.name = "Android_APK_2DGravity"
 
 include ':app'
-include ':MetatransApps_Android_LIB_Commons'
-include ':MetatransApps_Android_LIB_CommonsAds'
-include ':MetatransApps_Android_LIB_Commons2D'
-include ':MetatransApps_Android_LIB_2DGravity'
+include ':Android_LIB_Commons'
+include ':Android_LIB_CommonsAds'
+include ':Android_LIB_Commons2D'
+include ':Android_LIB_2DGravity'
 
-project(':MetatransApps_Android_LIB_Commons').projectDir = new File('./../MetatransApps_Android_LIB_Commons/app')
-project(':MetatransApps_Android_LIB_CommonsAds').projectDir = new File('./../MetatransApps_Android_LIB_CommonsAds/app')
-project(':MetatransApps_Android_LIB_Commons2D').projectDir = new File('./../MetatransApps_Android_LIB_Commons2D/app')
-project(':MetatransApps_Android_LIB_2DGravity').projectDir = new File('./../MetatransApps_Android_LIB_2DGravity/app')
+project(':Android_LIB_Commons').projectDir = new File('./../Android_LIB_Commons/app')
+project(':Android_LIB_CommonsAds').projectDir = new File('./../Android_LIB_CommonsAds/app')
+project(':Android_LIB_Commons2D').projectDir = new File('./../Android_LIB_Commons2D/app')
+project(':Android_LIB_2DGravity').projectDir = new File('./../Android_LIB_2DGravity/app')

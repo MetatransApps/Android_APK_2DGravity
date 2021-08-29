@@ -32,7 +32,7 @@
         android:icon="@drawable/ic_logo_gravity"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        android:name="com.gravityplay.app.Application_Gravity_AdsHome">
+        android:name="com.gravityplay.app.Application_2DGravity">
 
         <activity
             android:name="com.apps.mobile.android.commons.web.Activity_WebView_StatePreservingImpl_With_VideoPlayer"

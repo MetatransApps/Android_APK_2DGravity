@@ -6,7 +6,7 @@ import com.apps.mobile.android.commons.cfg.appstore.IAppStore;
 import com.gravityplay.cfg.ads.AdsConfigurations_Gravity;
 
 
-public class Application_Gravity_AdsHome extends Application_Gravity {
+public class Application_2DGravity extends Application_Gravity {
 
 
 	@Override

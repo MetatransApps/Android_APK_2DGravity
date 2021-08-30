@@ -1,4 +1,4 @@
-package com.gravityplay.cfg.ads;
+package org.metatransapps.apps.gravity.cfg.ads;
 
 
 import org.metatransapps.commons.ads.api.IAdsConfiguration;

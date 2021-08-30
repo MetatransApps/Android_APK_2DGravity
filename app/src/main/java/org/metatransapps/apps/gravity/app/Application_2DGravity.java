@@ -1,10 +1,10 @@
-package com.gravityplay.app;
+package org.metatransapps.apps.gravity.app;
 
 
+import org.metatransapps.apps.gravity.app.Application_Gravity;
+import org.metatransapps.apps.gravity.cfg.ads.AdsConfigurations_Gravity;
 import org.metatransapps.commons.ads.api.IAdsConfigurations;
 import org.metatransapps.commons.cfg.appstore.IAppStore;
-
-import com.gravityplay.cfg.ads.AdsConfigurations_Gravity;
 
 
 public class Application_2DGravity extends Application_Gravity {

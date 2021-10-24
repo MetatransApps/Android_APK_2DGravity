@@ -30,7 +30,6 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_logo_gravity"
-        android:label="@string/app_name"
         android:theme="@style/AppTheme"
         android:name="org.metatrans.apps.gravity.app.Application_2DGravity">
 
@@ -43,12 +42,11 @@
 
         <activity
             android:name="org.metatrans.apps.gravity.main.Activity_Main_Gravity"
-            android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:hardwareAccelerated="true"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -69,7 +67,7 @@
             android:name="org.metatrans.apps.gravity.menu.Activity_Menu_Levels"
             android:icon="@drawable/ic_rainbow"
             android:label="@string/levels"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -80,7 +78,7 @@
         <activity
             android:name="org.metatrans.apps.gravity.menu.Activity_Menu_Main"
             android:label="@string/menu_main"
-            android:theme="@style/AppBaseTheme" >
+            android:theme="@style/AppTheme" >
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -92,7 +90,7 @@
             android:name="org.metatrans.commons.marketing.Activity_Marketing_AppList"
             android:icon="@drawable/ic_colours_tube"
             android:label="@string/label_moregames"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -104,7 +102,7 @@
             android:name="org.metatrans.commons.menu.Activity_Menu_Colours_Base"
             android:icon="@drawable/ic_rainbow"
             android:label="@string/menu_colour_scheme"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -116,7 +114,7 @@
             android:name="org.metatrans.commons.engagement.achievements.Activity_Achievements_Base"
             android:icon="@drawable/ic_achievements"
             android:label="@string/achievements"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -128,7 +126,7 @@
             android:name="org.metatrans.commons.engagement.achievements.Activity_Picture"
             android:icon="@drawable/ic_achievements"
             android:label="@string/achievement"
-            android:theme="@style/AppBaseTheme">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -137,10 +135,9 @@
 
 
         <activity
-            android:name="org.metatrans.apps.gravity.loading.Activity_Loading"
-            android:label="@string/app_name">
+            android:name="org.metatrans.apps.gravity.loading.Activity_Loading">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

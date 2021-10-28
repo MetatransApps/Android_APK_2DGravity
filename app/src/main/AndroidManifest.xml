@@ -30,6 +30,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_logo_gravity"
+        android:label="@string/app_gravity_name"
         android:theme="@style/AppTheme"
         android:name="org.metatrans.apps.gravity.app.Application_2DGravity">
 

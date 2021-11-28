@@ -1,16 +1,13 @@
 
 [submodule "Android_LIB_Commons"]
 	path = Android_LIB_Commons
-	url = https://github.com/MetatransApps/Android_LIB_Commons/releases/tag/100
-
+	url = https://github.com/MetatransApps/Android_LIB_Commons
 [submodule "Android_LIB_CommonsAds"]
 	path = Android_LIB_CommonsAds
-	url = https://github.com/MetatransApps/Android_LIB_CommonsAds/releases/tag/100
-
+	url = https://github.com/MetatransApps/Android_LIB_CommonsAds
 [submodule "Android_LIB_Commons2D"]
 	path = Android_LIB_Commons2D
-	url = https://github.com/MetatransApps/Android_LIB_Commons2D/releases/tag/100
-
+	url = https://github.com/MetatransApps/Android_LIB_Commons2D
 [submodule "Android_APP_2DGravity"]
 	path = Android_APP_2DGravity
-	url = https://github.com/MetatransApps/Android_APP_2DGravity/releases/tag/100
+	url = https://github.com/MetatransApps/Android_APP_2DGravity

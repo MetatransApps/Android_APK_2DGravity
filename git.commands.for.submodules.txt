@@ -1,0 +1,9 @@
+git submodule add https://github.com/MetatransApps/Android_LIB_Commons Android_LIB_Commons
+git submodule add https://github.com/MetatransApps/Android_LIB_CommonsAds Android_LIB_CommonsAds
+git submodule add https://github.com/MetatransApps/Android_LIB_Commons2D Android_LIB_Commons2D
+git submodule add https://github.com/MetatransApps/Android_APP_2DGravity Android_APP_2DGravity
+
+git submodule deinit -f Android_LIB_Commons
+git submodule deinit -f Android_LIB_CommonsAds
+git submodule deinit -f Android_LIB_Commons2D
+git submodule deinit -f Android_APP_2DGravity

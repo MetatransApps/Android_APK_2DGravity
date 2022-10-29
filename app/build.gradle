@@ -6,7 +6,7 @@ plugins {
 
 android {
 
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.3"
 
     defaultConfig {
@@ -14,10 +14,10 @@ android {
         applicationId "com.gravityplay"
 
         minSdkVersion 23
-        targetSdkVersion 30
+        targetSdkVersion 31
 
-        versionCode 108
-        versionName "1.0.8"
+        versionCode 110
+        versionName "1.1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -35,6 +35,18 @@ android {
 
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    namespace 'com.gravityplay'
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            println variant.name
+            if (variant.name.contains("release")) {
+                outputFileName = new File("../../../../../../release", "com.gravityplay_${variant.versionCode}_ads_home.apk")
+                println outputFileName
+            }
+        }
     }
 }
 

@@ -1,0 +1,1 @@
+New graphical design of the game assets - asteroids, black hole and space background.

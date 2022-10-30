@@ -7,3 +7,33 @@ git submodule deinit -f Android_LIB_Commons
 git submodule deinit -f Android_LIB_CommonsAds
 git submodule deinit -f Android_LIB_Commons2D
 git submodule deinit -f Android_APP_2DGravity
+
+cd Android_APK_2DGravity_submodules
+
+1)
+git submodule add https://github.com/MetatransApps/Android_LIB_Commons
+git submodule add https://github.com/MetatransApps/Android_LIB_CommonsAds
+git submodule add https://github.com/MetatransApps/Android_LIB_Commons2D
+git submodule add https://github.com/MetatransApps/Android_APP_2DGravity
+
+2) Push in each submodule a minor change (e.g. create new history.txt file or update it)
+
+3) git submodule update --remote --merge
+
+4)
+cd Android_LIB_Commons
+git checkout v101
+cd ..
+cd Android_LIB_CommonsAds
+git checkout v101
+cd ..
+cd Android_LIB_Commons2D
+git checkout v101
+cd ..
+cd Android_APP_2DGravity
+git checkout v101
+cd ..
+
+5) git add *
+
+6) push changes of Android_APK_2DGravity_submodules to main

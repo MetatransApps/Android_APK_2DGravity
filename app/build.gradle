@@ -38,16 +38,6 @@ android {
     }
 
     namespace 'com.gravityplay'
-
-    android.applicationVariants.all { variant ->
-        variant.outputs.all {
-            println variant.name
-            if (variant.name.contains("release")) {
-                outputFileName = new File("../../../../../../release", "com.gravityplay_${variant.versionCode}_ads_home.apk")
-                println outputFileName
-            }
-        }
-    }
 }
 
 dependencies {

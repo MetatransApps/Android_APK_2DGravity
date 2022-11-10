@@ -13,8 +13,14 @@ cd Android_APK_2DGravity_submodules
 1)
 git submodule add https://github.com/MetatransApps/Android_LIB_Commons
 git submodule add https://github.com/MetatransApps/Android_LIB_CommonsAds
+
 git submodule add https://github.com/MetatransApps/Android_LIB_Commons2D
-git submodule add https://github.com/MetatransApps/Android_APP_2DGravity
+git submodule add https://github.com/MetatransApps/Android_APP_2DBalloons
+
+git submodule add https://github.com/MetatransApps/Android_LIB_CommonsQuestionnaire
+git submodule add https://github.com/MetatransApps/Android_APP_QAStroopEffectTest
+
+git submodule add https://github.com/MetatransApps/Android_LIB_CommonsChess
 
 2) Push in each submodule a minor change (e.g. create new history.txt file or update it)
 

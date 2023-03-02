@@ -1,9 +1,9 @@
 package org.metatrans.apps.gravity.app;
 
 
-import org.metatrans.apps.gravity.app.Application_Gravity;
-import org.metatrans.apps.gravity.cfg.ads.AdsConfigurations_Gravity;
-import org.metatrans.commons.ads.api.IAdsConfigurations;
+import org.metatrans.apps.gravity.cfg.ads.AdsConfiguration_Gravity;
+import org.metatrans.commons.ads.api.IAdsProviders;
+import org.metatrans.commons.ads.impl.AdsConfigurations_DynamicImpl;
 import org.metatrans.commons.cfg.appstore.IAppStore;
 
 
@@ -11,16 +11,26 @@ public class Application_2DGravity extends Application_Gravity {
 
 
 	@Override
-	public IAppStore getAppStore() {
-		return IAppStore.OBJ_FDROID_OFFICIAL;
+	public void onCreate() {
+
+		super.onCreate();
+
+		getAdsConfigurations().addProviderConfig(
+				IAdsProviders.ID_HOME_ADS,
+				new AdsConfiguration_Gravity()
+		);
 	}
 
 
-	protected IAdsConfigurations adsConfigurations 	= new AdsConfigurations_Gravity(this);
+	@Override
+	public AdsConfigurations_DynamicImpl getAdsConfigurations() {
+
+		return (AdsConfigurations_DynamicImpl) super.getAdsConfigurations();
+	}
 
 
 	@Override
-	public IAdsConfigurations getAdsConfigurations() {
-		return adsConfigurations;
+	public IAppStore getAppStore() {
+		return IAppStore.OBJ_FDROID_OFFICIAL;
 	}
 }
